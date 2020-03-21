@@ -10,15 +10,10 @@ const Days = () => {
   useEffect(() => {
     getDaysList()
       .then((data) => {
-        console.log(data)
-        if (data.err === 0) {
-          setDataList(data.msg)
-        } else {
-          message.error(data.msg)
-        }
+        setDataList(data.msg)
       })
       .catch((err) => {
-        message.error(err)
+        console.log(err)
       })
   }, [])
   const columns = [

@@ -35,6 +35,7 @@
         "react/jsx-props-no-spreading":0,
         "no-shadow":0,
         "react/no-array-index-key":1,
-        "no-underscore-dangle":1
+        "no-underscore-dangle":1,
+        "prefer-promise-reject-errors":1
     }
 }

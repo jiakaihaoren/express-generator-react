@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  Form, Input, Button, Checkbox, message,
+  Form, Input, Button, Checkbox,
 } from 'antd';
 import { useHistory } from 'react-router-dom';
 import styles from './index.module.css'
 import { usersLogin } from '../../api/users'
-import { useDispatch } from '../../store';
 
 const layout = {
   labelCol: { span: 8 },
@@ -21,13 +20,8 @@ const Login = () => {
   const onFinish = (values:any) => {
     const { us, ps } = values
     usersLogin({ us, ps })
-      .then((data) => {
-        if (data.err === 0) {
-          message.success(data.msg)
-          history.push('/days');
-        } else {
-          message.error(data.msg);
-        }
+      .then(() => {
+        history.push('/days');
       })
       .catch((err) => {
         console.log(err)

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App.tsx';
 import * as serviceWorker from './serviceWorker';
 import { StoreContext, makeStore } from './store';
@@ -9,7 +10,7 @@ const store = makeStore();
 
 ReactDOM.render(
   <StoreContext.Provider value={store}>
-    <App />
+    <Router><App /></Router>
   </StoreContext.Provider>,
   document.getElementById('root'),
 );
