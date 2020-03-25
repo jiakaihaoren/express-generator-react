@@ -36,6 +36,9 @@
         "no-shadow":0,
         "react/no-array-index-key":1,
         "no-underscore-dangle":1,
-        "prefer-promise-reject-errors":1
+        "prefer-promise-reject-errors":1,
+        "no-param-reassign":1,
+        "jsx-a11y/media-has-caption":0,
+        "no-plusplus":0
     }
 }

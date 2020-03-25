@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router, Switch, Route, Link, useLocation,
+  Switch, Route, Link, useLocation,
 } from 'react-router-dom';
 import {
-  Layout, Menu, Button, message,
+  Layout, Menu, Button,
 } from 'antd';
 import {
   MenuUnfoldOutlined,
@@ -33,9 +33,6 @@ function App() {
   };
   const logout = () => {
     usersLogout()
-      .then((data) => {
-        message.success(data.msg)
-      })
       .catch((err) => {
         console.log(err)
       })

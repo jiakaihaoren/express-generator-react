@@ -1,0 +1,17 @@
+.actionBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom:10px
+}
+.freshBtn{
+    margin-right: 10px;
+}
+.searchInput{
+    width: 300;
+    margin-right:10px
+}
+
+.actionWrapper{
+    display: flex;
+    justify-content: space-between;
+}

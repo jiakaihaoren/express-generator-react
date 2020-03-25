@@ -1,6 +1,6 @@
 import React from 'react';
 import { Spin } from 'antd';
-import { useAxiosLoader } from '../../api/users'
+import { useAxiosLoader } from '../../api/axiosInterceptor'
 import styles from './index.module.css'
 
 const SpinLoader = () => {
